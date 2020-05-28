@@ -14,7 +14,7 @@ const userSchema = mongoose.Schema({
     password: {
         type: String,
         trim: true,
-        unique: 1//중복갯수
+        minlength: 5
 
     },
     lastname: {
@@ -36,4 +36,4 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model('User', userSchema) //모델의 이름,스키마
 
-module.exprots = {} //다른 파일에서도 써줄 수 있게
+module.exports = { User } //다른 파일에서도 써줄 수 있게
