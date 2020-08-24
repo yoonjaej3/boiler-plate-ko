@@ -1,1 +1,1 @@
-# boiler-plate-ko
+# NaviBookStore_2020
